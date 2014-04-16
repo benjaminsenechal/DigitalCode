@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152D02CD9F4A45B0B5A68244 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE69C3647094ED588B5C632 /* libPods.a */; };
 		9133A2FC18FED74900C84280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FB18FED74900C84280 /* Foundation.framework */; };
 		9133A2FE18FED74900C84280 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FD18FED74900C84280 /* CoreGraphics.framework */; };
 		9133A30018FED74900C84280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FF18FED74900C84280 /* UIKit.framework */; };
 		9133A30618FED74900C84280 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9133A30418FED74900C84280 /* InfoPlist.strings */; };
 		9133A30818FED74900C84280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A30718FED74900C84280 /* main.m */; };
 		9133A30C18FED74900C84280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A30B18FED74900C84280 /* AppDelegate.m */; };
-		9133A30F18FED74900C84280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9133A30D18FED74900C84280 /* Main.storyboard */; };
 		9133A31218FED74900C84280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A31118FED74900C84280 /* ViewController.m */; };
 		9133A31418FED74A00C84280 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9133A31318FED74900C84280 /* Images.xcassets */; };
 		9133A31B18FED74A00C84280 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A31A18FED74A00C84280 /* XCTest.framework */; };
@@ -21,6 +21,12 @@
 		9133A31D18FED74A00C84280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FF18FED74900C84280 /* UIKit.framework */; };
 		9133A32518FED74A00C84280 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9133A32318FED74A00C84280 /* InfoPlist.strings */; };
 		9133A32718FED74A00C84280 /* DigitalCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A32618FED74A00C84280 /* DigitalCodeTests.m */; };
+		9133A33418FEDC1700C84280 /* Code.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A33318FEDC1700C84280 /* Code.m */; };
+		9133A33718FEE15600C84280 /* BDAcces.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A33618FEE15600C84280 /* BDAcces.m */; };
+		9133A33C18FEEBBE00C84280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9133A30D18FED74900C84280 /* Main.storyboard */; };
+		9133A34B18FEFF4000C84280 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A34A18FEFF4000C84280 /* libsqlite3.0.dylib */; };
+		9133A34C18FEFF4300C84280 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A34018FEF07B00C84280 /* libsqlite3.dylib */; };
+		9133A34E18FEFF7D00C84280 /* Codes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9133A34D18FEFF7D00C84280 /* Codes.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		9133A32218FED74A00C84280 /* DigitalCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalCodeTests-Info.plist"; sourceTree = "<group>"; };
 		9133A32418FED74A00C84280 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9133A32618FED74A00C84280 /* DigitalCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalCodeTests.m; sourceTree = "<group>"; };
+		9133A33218FEDC1700C84280 /* Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code.h; sourceTree = "<group>"; };
+		9133A33318FEDC1700C84280 /* Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Code.m; sourceTree = "<group>"; };
+		9133A33518FEE15600C84280 /* BDAcces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDAcces.h; sourceTree = "<group>"; };
+		9133A33618FEE15600C84280 /* BDAcces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDAcces.m; sourceTree = "<group>"; };
+		9133A34018FEF07B00C84280 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9133A34A18FEFF4000C84280 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		9133A34D18FEFF7D00C84280 /* Codes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Codes.sqlite; sourceTree = "<group>"; };
+		9BE69C3647094ED588B5C632 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2AE24FCFF54F22BA549B7F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +75,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9133A34C18FEFF4300C84280 /* libsqlite3.dylib in Frameworks */,
+				9133A34B18FEFF4000C84280 /* libsqlite3.0.dylib in Frameworks */,
 				9133A2FE18FED74900C84280 /* CoreGraphics.framework in Frameworks */,
 				9133A30018FED74900C84280 /* UIKit.framework in Frameworks */,
 				9133A2FC18FED74900C84280 /* Foundation.framework in Frameworks */,
+				152D02CD9F4A45B0B5A68244 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +104,7 @@
 				9133A32018FED74A00C84280 /* DigitalCodeTests */,
 				9133A2FA18FED74900C84280 /* Frameworks */,
 				9133A2F918FED74900C84280 /* Products */,
+				FD2AE24FCFF54F22BA549B7F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +120,13 @@
 		9133A2FA18FED74900C84280 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9133A34A18FEFF4000C84280 /* libsqlite3.0.dylib */,
+				9133A34018FEF07B00C84280 /* libsqlite3.dylib */,
 				9133A2FB18FED74900C84280 /* Foundation.framework */,
 				9133A2FD18FED74900C84280 /* CoreGraphics.framework */,
 				9133A2FF18FED74900C84280 /* UIKit.framework */,
 				9133A31A18FED74A00C84280 /* XCTest.framework */,
+				9BE69C3647094ED588B5C632 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,8 +134,7 @@
 		9133A30118FED74900C84280 /* DigitalCode */ = {
 			isa = PBXGroup;
 			children = (
-				9133A30A18FED74900C84280 /* AppDelegate.h */,
-				9133A30B18FED74900C84280 /* AppDelegate.m */,
+				9133A33018FED8EF00C84280 /* Models */,
 				9133A30D18FED74900C84280 /* Main.storyboard */,
 				9133A31018FED74900C84280 /* ViewController.h */,
 				9133A31118FED74900C84280 /* ViewController.m */,
@@ -126,6 +147,9 @@
 		9133A30218FED74900C84280 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9133A34D18FEFF7D00C84280 /* Codes.sqlite */,
+				9133A30A18FED74900C84280 /* AppDelegate.h */,
+				9133A30B18FED74900C84280 /* AppDelegate.m */,
 				9133A30318FED74900C84280 /* DigitalCode-Info.plist */,
 				9133A30418FED74900C84280 /* InfoPlist.strings */,
 				9133A30718FED74900C84280 /* main.m */,
@@ -152,6 +176,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9133A33018FED8EF00C84280 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9133A33218FEDC1700C84280 /* Code.h */,
+				9133A33318FEDC1700C84280 /* Code.m */,
+				9133A33518FEE15600C84280 /* BDAcces.h */,
+				9133A33618FEE15600C84280 /* BDAcces.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9133A32A18FED74A00C84280 /* Build configuration list for PBXNativeTarget "DigitalCode" */;
 			buildPhases = (
+				04710AA6B6B046DCBFC107E1 /* Check Pods Manifest.lock */,
 				9133A2F418FED74900C84280 /* Sources */,
 				9133A2F518FED74900C84280 /* Frameworks */,
 				9133A2F618FED74900C84280 /* Resources */,
+				2C5D041DC9904F26A3CC8309 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9133A33C18FEEBBE00C84280 /* Main.storyboard in Resources */,
+				9133A34E18FEFF7D00C84280 /* Codes.sqlite in Resources */,
 				9133A31418FED74A00C84280 /* Images.xcassets in Resources */,
 				9133A30618FED74900C84280 /* InfoPlist.strings in Resources */,
-				9133A30F18FED74900C84280 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +282,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04710AA6B6B046DCBFC107E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C5D041DC9904F26A3CC8309 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9133A2F418FED74900C84280 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9133A33418FEDC1700C84280 /* Code.m in Sources */,
 				9133A31218FED74900C84280 /* ViewController.m in Sources */,
 				9133A30C18FED74900C84280 /* AppDelegate.m in Sources */,
 				9133A30818FED74900C84280 /* main.m in Sources */,
+				9133A33718FEE15600C84280 /* BDAcces.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +446,7 @@
 		};
 		9133A32B18FED74A00C84280 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2AE24FCFF54F22BA549B7F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +460,7 @@
 		};
 		9133A32C18FED74A00C84280 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2AE24FCFF54F22BA549B7F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +531,7 @@
 				9133A32C18FED74A00C84280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9133A32D18FED74A00C84280 /* Build configuration list for PBXNativeTarget "DigitalCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +540,7 @@
 				9133A32F18FED74A00C84280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

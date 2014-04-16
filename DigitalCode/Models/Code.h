@@ -1,14 +1,16 @@
 //
-//  ViewController.h
+//  Code.h
 //  DigitalCode
 //
 //  Created by Benjamin SENECHAL on 16/04/2014.
 //  Copyright (c) 2014 Benjamin SENECHAL. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "BDAcces.h"
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
+@interface Code : NSObject
+
+@property (nonatomic,assign) int Value;
 
 @end

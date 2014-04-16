@@ -17,13 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSArray *codesRetrieved = [BDAcces database].codes;
+    NSLog(@"%@",codesRetrieved);
+    for (Code *code in codesRetrieved) {
+        NSLog(@"%d", code.Value);
+    }
+    BOOL booo = [[BDAcces database] insertCode:1111];
+    NSLog(@"%d", booo);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
