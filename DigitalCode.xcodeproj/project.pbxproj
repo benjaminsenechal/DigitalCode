@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9133A2FC18FED74900C84280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FB18FED74900C84280 /* Foundation.framework */; };
+		9133A2FE18FED74900C84280 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FD18FED74900C84280 /* CoreGraphics.framework */; };
+		9133A30018FED74900C84280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FF18FED74900C84280 /* UIKit.framework */; };
+		9133A30618FED74900C84280 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9133A30418FED74900C84280 /* InfoPlist.strings */; };
+		9133A30818FED74900C84280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A30718FED74900C84280 /* main.m */; };
+		9133A30C18FED74900C84280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A30B18FED74900C84280 /* AppDelegate.m */; };
+		9133A30F18FED74900C84280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9133A30D18FED74900C84280 /* Main.storyboard */; };
+		9133A31218FED74900C84280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A31118FED74900C84280 /* ViewController.m */; };
+		9133A31418FED74A00C84280 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9133A31318FED74900C84280 /* Images.xcassets */; };
+		9133A31B18FED74A00C84280 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A31A18FED74A00C84280 /* XCTest.framework */; };
+		9133A31C18FED74A00C84280 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FB18FED74900C84280 /* Foundation.framework */; };
+		9133A31D18FED74A00C84280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A2FF18FED74900C84280 /* UIKit.framework */; };
+		9133A32518FED74A00C84280 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9133A32318FED74A00C84280 /* InfoPlist.strings */; };
+		9133A32718FED74A00C84280 /* DigitalCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A32618FED74A00C84280 /* DigitalCodeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9133A31E18FED74A00C84280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9133A2F018FED74900C84280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9133A2F718FED74900C84280;
+			remoteInfo = DigitalCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9133A2F818FED74900C84280 /* DigitalCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9133A2FB18FED74900C84280 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9133A2FD18FED74900C84280 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9133A2FF18FED74900C84280 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9133A30318FED74900C84280 /* DigitalCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalCode-Info.plist"; sourceTree = "<group>"; };
+		9133A30518FED74900C84280 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9133A30718FED74900C84280 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9133A30918FED74900C84280 /* DigitalCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalCode-Prefix.pch"; sourceTree = "<group>"; };
+		9133A30A18FED74900C84280 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9133A30B18FED74900C84280 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9133A30E18FED74900C84280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9133A31018FED74900C84280 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9133A31118FED74900C84280 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9133A31318FED74900C84280 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9133A31918FED74A00C84280 /* DigitalCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9133A31A18FED74A00C84280 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9133A32218FED74A00C84280 /* DigitalCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalCodeTests-Info.plist"; sourceTree = "<group>"; };
+		9133A32418FED74A00C84280 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9133A32618FED74A00C84280 /* DigitalCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalCodeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9133A2F518FED74900C84280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A2FE18FED74900C84280 /* CoreGraphics.framework in Frameworks */,
+				9133A30018FED74900C84280 /* UIKit.framework in Frameworks */,
+				9133A2FC18FED74900C84280 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9133A31618FED74A00C84280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A31B18FED74A00C84280 /* XCTest.framework in Frameworks */,
+				9133A31D18FED74A00C84280 /* UIKit.framework in Frameworks */,
+				9133A31C18FED74A00C84280 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9133A2EF18FED74900C84280 = {
+			isa = PBXGroup;
+			children = (
+				9133A30118FED74900C84280 /* DigitalCode */,
+				9133A32018FED74A00C84280 /* DigitalCodeTests */,
+				9133A2FA18FED74900C84280 /* Frameworks */,
+				9133A2F918FED74900C84280 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9133A2F918FED74900C84280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9133A2F818FED74900C84280 /* DigitalCode.app */,
+				9133A31918FED74A00C84280 /* DigitalCodeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9133A2FA18FED74900C84280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9133A2FB18FED74900C84280 /* Foundation.framework */,
+				9133A2FD18FED74900C84280 /* CoreGraphics.framework */,
+				9133A2FF18FED74900C84280 /* UIKit.framework */,
+				9133A31A18FED74A00C84280 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9133A30118FED74900C84280 /* DigitalCode */ = {
+			isa = PBXGroup;
+			children = (
+				9133A30A18FED74900C84280 /* AppDelegate.h */,
+				9133A30B18FED74900C84280 /* AppDelegate.m */,
+				9133A30D18FED74900C84280 /* Main.storyboard */,
+				9133A31018FED74900C84280 /* ViewController.h */,
+				9133A31118FED74900C84280 /* ViewController.m */,
+				9133A31318FED74900C84280 /* Images.xcassets */,
+				9133A30218FED74900C84280 /* Supporting Files */,
+			);
+			path = DigitalCode;
+			sourceTree = "<group>";
+		};
+		9133A30218FED74900C84280 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9133A30318FED74900C84280 /* DigitalCode-Info.plist */,
+				9133A30418FED74900C84280 /* InfoPlist.strings */,
+				9133A30718FED74900C84280 /* main.m */,
+				9133A30918FED74900C84280 /* DigitalCode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9133A32018FED74A00C84280 /* DigitalCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9133A32618FED74A00C84280 /* DigitalCodeTests.m */,
+				9133A32118FED74A00C84280 /* Supporting Files */,
+			);
+			path = DigitalCodeTests;
+			sourceTree = "<group>";
+		};
+		9133A32118FED74A00C84280 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9133A32218FED74A00C84280 /* DigitalCodeTests-Info.plist */,
+				9133A32318FED74A00C84280 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9133A2F718FED74900C84280 /* DigitalCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9133A32A18FED74A00C84280 /* Build configuration list for PBXNativeTarget "DigitalCode" */;
+			buildPhases = (
+				9133A2F418FED74900C84280 /* Sources */,
+				9133A2F518FED74900C84280 /* Frameworks */,
+				9133A2F618FED74900C84280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalCode;
+			productName = DigitalCode;
+			productReference = 9133A2F818FED74900C84280 /* DigitalCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9133A31818FED74A00C84280 /* DigitalCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9133A32D18FED74A00C84280 /* Build configuration list for PBXNativeTarget "DigitalCodeTests" */;
+			buildPhases = (
+				9133A31518FED74A00C84280 /* Sources */,
+				9133A31618FED74A00C84280 /* Frameworks */,
+				9133A31718FED74A00C84280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9133A31F18FED74A00C84280 /* PBXTargetDependency */,
+			);
+			name = DigitalCodeTests;
+			productName = DigitalCodeTests;
+			productReference = 9133A31918FED74A00C84280 /* DigitalCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9133A2F018FED74900C84280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Benjamin SENECHAL";
+				TargetAttributes = {
+					9133A31818FED74A00C84280 = {
+						TestTargetID = 9133A2F718FED74900C84280;
+					};
+				};
+			};
+			buildConfigurationList = 9133A2F318FED74900C84280 /* Build configuration list for PBXProject "DigitalCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9133A2EF18FED74900C84280;
+			productRefGroup = 9133A2F918FED74900C84280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9133A2F718FED74900C84280 /* DigitalCode */,
+				9133A31818FED74A00C84280 /* DigitalCodeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9133A2F618FED74900C84280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A31418FED74A00C84280 /* Images.xcassets in Resources */,
+				9133A30618FED74900C84280 /* InfoPlist.strings in Resources */,
+				9133A30F18FED74900C84280 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9133A31718FED74A00C84280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A32518FED74A00C84280 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9133A2F418FED74900C84280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A31218FED74900C84280 /* ViewController.m in Sources */,
+				9133A30C18FED74900C84280 /* AppDelegate.m in Sources */,
+				9133A30818FED74900C84280 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9133A31518FED74A00C84280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A32718FED74A00C84280 /* DigitalCodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9133A31F18FED74A00C84280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9133A2F718FED74900C84280 /* DigitalCode */;
+			targetProxy = 9133A31E18FED74A00C84280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9133A30418FED74900C84280 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9133A30518FED74900C84280 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9133A30D18FED74900C84280 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9133A30E18FED74900C84280 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9133A32318FED74A00C84280 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9133A32418FED74A00C84280 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9133A32818FED74A00C84280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9133A32918FED74A00C84280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9133A32B18FED74A00C84280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalCode/DigitalCode-Prefix.pch";
+				INFOPLIST_FILE = "DigitalCode/DigitalCode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9133A32C18FED74A00C84280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalCode/DigitalCode-Prefix.pch";
+				INFOPLIST_FILE = "DigitalCode/DigitalCode-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9133A32E18FED74A00C84280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalCode.app/DigitalCode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalCode/DigitalCode-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DigitalCodeTests/DigitalCodeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9133A32F18FED74A00C84280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalCode.app/DigitalCode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalCode/DigitalCode-Prefix.pch";
+				INFOPLIST_FILE = "DigitalCodeTests/DigitalCodeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9133A2F318FED74900C84280 /* Build configuration list for PBXProject "DigitalCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9133A32818FED74A00C84280 /* Debug */,
+				9133A32918FED74A00C84280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9133A32A18FED74A00C84280 /* Build configuration list for PBXNativeTarget "DigitalCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9133A32B18FED74A00C84280 /* Debug */,
+				9133A32C18FED74A00C84280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9133A32D18FED74A00C84280 /* Build configuration list for PBXNativeTarget "DigitalCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9133A32E18FED74A00C84280 /* Debug */,
+				9133A32F18FED74A00C84280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9133A2F018FED74900C84280 /* Project object */;
+}
