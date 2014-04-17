@@ -42,6 +42,7 @@ static BDAcces *_database;
                 else
                 {
                     NSLog(@"Table created");
+                    [self insertCode:0000];
                 }
                 
                 sqlite3_close(_database);
