@@ -17,14 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray *codesRetrieved = [BDAcces database].codes;
+    BDAcces *bd = [[BDAcces alloc]init];
+    [bd insertCode:7890];
+    
+    NSArray *codesRetrieved = [bd codes];
     NSLog(@"%@",codesRetrieved);
     for (Code *code in codesRetrieved) {
         NSLog(@"%d", code.Value);
     }
-    BOOL booo = [[BDAcces database] insertCode:1111];
-    NSLog(@"%d", booo);
 }
-
 
 @end

@@ -14,8 +14,9 @@
     sqlite3 *_database;
 }
 
-+ (BDAcces*)database;
 - (NSArray *)codes;
 - (BOOL)insertCode:(int)txt;
+
+@property (nonatomic, strong) NSString *databasePath;
 
 @end
