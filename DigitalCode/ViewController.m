@@ -10,16 +10,24 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *code;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *roomsPicker;
+@property (strong, nonatomic) NSArray *rooms;
 @property (strong, nonatomic) BDAcces *db;
 @end
 
 @implementation ViewController
 
+#pragma mark Life Cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     _code.text = @"";
+    _rooms = @[@"Salle 1",@"Salle 2",@"Salle 3"];
 }
+
+#pragma mark Generate unique code
 
 - (IBAction)generateCode:(UIButton *)sender {
     _db = [[BDAcces alloc]init];
@@ -52,6 +60,27 @@
 - (int)codeGenerator
 {
     return [[NSString stringWithFormat:@"%d%d%d%d", arc4random()%10, arc4random()%10, arc4random()%10, arc4random()%10] intValue];
+}
+
+#pragma mark PickerView DataSource
+
+- (NSInteger)numberOfComponentsInPickerView:
+(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    return _rooms.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component
+{
+    return _rooms[row];
 }
 
 @end
