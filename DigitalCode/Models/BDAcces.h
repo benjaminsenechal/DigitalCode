@@ -9,14 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "sqlite3.h"
 #import "Code.h"
+#import "Room.h"
 
 @interface BDAcces : NSObject {
     sqlite3 *_database;
 }
 
 - (NSArray *)codes;
-- (BOOL)insertCode:(int)txt;
-
+- (NSArray *)rooms;
+- (BOOL)insertCode:(int)value WithDate:(NSDate *)date AndRoom:(int)room;
 @property (nonatomic, strong) NSString *databasePath;
 
 @end

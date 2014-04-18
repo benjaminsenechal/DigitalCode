@@ -27,6 +27,7 @@
 		9133A34B18FEFF4000C84280 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A34A18FEFF4000C84280 /* libsqlite3.0.dylib */; };
 		9133A34C18FEFF4300C84280 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9133A34018FEF07B00C84280 /* libsqlite3.dylib */; };
 		9133A34E18FEFF7D00C84280 /* Codes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9133A34D18FEFF7D00C84280 /* Codes.sqlite */; };
+		91F99292190175EA00426523 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F99291190175E900426523 /* Room.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		9133A34018FEF07B00C84280 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9133A34A18FEFF4000C84280 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9133A34D18FEFF7D00C84280 /* Codes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Codes.sqlite; sourceTree = "<group>"; };
+		91F99290190175E900426523 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		91F99291190175E900426523 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
 		9BE69C3647094ED588B5C632 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2AE24FCFF54F22BA549B7F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,10 +182,12 @@
 		9133A33018FED8EF00C84280 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9133A33218FEDC1700C84280 /* Code.h */,
-				9133A33318FEDC1700C84280 /* Code.m */,
 				9133A33518FEE15600C84280 /* BDAcces.h */,
 				9133A33618FEE15600C84280 /* BDAcces.m */,
+				9133A33218FEDC1700C84280 /* Code.h */,
+				9133A33318FEDC1700C84280 /* Code.m */,
+				91F99290190175E900426523 /* Room.h */,
+				91F99291190175E900426523 /* Room.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F99292190175EA00426523 /* Room.m in Sources */,
 				9133A33418FEDC1700C84280 /* Code.m in Sources */,
 				9133A31218FED74900C84280 /* ViewController.m in Sources */,
 				9133A30C18FED74900C84280 /* AppDelegate.m in Sources */,

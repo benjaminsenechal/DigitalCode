@@ -9,11 +9,13 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+
 @property (strong, nonatomic) IBOutlet UILabel *code;
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (strong, nonatomic) IBOutlet UIPickerView *roomsPicker;
 @property (strong, nonatomic) NSArray *rooms;
 @property (strong, nonatomic) BDAcces *db;
+
 @end
 
 @implementation ViewController
@@ -23,33 +25,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _code.text = @"";
-    _rooms = @[@"Salle 1",@"Salle 2",@"Salle 3"];
+    self.db = [[BDAcces alloc]init];
+    self.code.text = @"";
+    self.rooms = [self.db rooms];
 }
 
 #pragma mark Generate unique code
 
 - (IBAction)generateCode:(UIButton *)sender {
-    _db = [[BDAcces alloc]init];
-    _code.text = [self searchValue];
+    self.code.text = [self searchValue];
 }
 
-- (NSString*)searchValue{
-    NSArray *codesRetrieved = [_db codes];
+- (NSString *)searchValue{
+    NSArray *codesRetrieved = [self.db codes];
     
     int value = [self codeGenerator];
     NSLog(@"%d",value);
     [codesRetrieved enumerateObjectsUsingBlock:^(Code *obj, NSUInteger idx, BOOL *stop) {
         if (obj.Value == value)
         {
-            //TO DO 
             NSLog(@"Value exists");
             *stop = YES;
             [self searchValue];
         }else{
             if([codesRetrieved count]-1 == idx){
                 NSLog(@"Good value");
-                [_db insertCode:value];
+                [self.db insertCode:value WithDate:_datePicker.date AndRoom:47];
             }
         }
     }];
@@ -73,14 +74,15 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component
 {
-    return _rooms.count;
+    return self.rooms.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component
 {
-    return _rooms[row];
+    Room *r = [self.rooms objectAtIndex:row];
+    return [[NSString alloc] initWithFormat:@"%d", r.idRoom];
 }
 
 @end

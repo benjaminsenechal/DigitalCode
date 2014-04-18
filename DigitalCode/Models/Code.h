@@ -12,5 +12,7 @@
 @interface Code : NSObject
 
 @property (nonatomic,assign) int Value;
+@property (nonatomic, strong) NSDate *Date;
+@property (nonatomic,assign) int Room;
 
 @end
