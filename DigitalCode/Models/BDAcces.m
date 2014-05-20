@@ -33,12 +33,12 @@ static BDAcces *_database;
                 char *errMsg;
                 
                 NSString *sql_stmt = @"CREATE TABLE IF NOT EXISTS room (";
-                sql_stmt = [sql_stmt stringByAppendingString:@"id INTEGER PRIMARY KEY);"];
+                sql_stmt = [sql_stmt stringByAppendingString:@"id VARCHAR PRIMARY KEY);"];
                 sql_stmt = [sql_stmt stringByAppendingString:@"CREATE TABLE IF NOT EXISTS code ("];
                 sql_stmt = [sql_stmt stringByAppendingString:@"id INTEGER PRIMARY KEY AUTOINCREMENT, "];
                 sql_stmt = [sql_stmt stringByAppendingString:@"date DATETIME, "];
                 sql_stmt = [sql_stmt stringByAppendingString:@"value INTEGER, "];
-                sql_stmt = [sql_stmt stringByAppendingString:@"idRoom INTEGER, "];
+                sql_stmt = [sql_stmt stringByAppendingString:@"idRoom VARCHAR, "];
                 sql_stmt = [sql_stmt stringByAppendingString:@"FOREIGN KEY(idRoom) REFERENCES room(id));"];
                 
                 if (sqlite3_exec(_database, [sql_stmt UTF8String], NULL, NULL, &errMsg) != SQLITE_OK)
@@ -48,10 +48,18 @@ static BDAcces *_database;
                 else
                 {
                     NSLog(@"Table created");
-                    [self insertCode:0000 WithDate:[NSDate date] AndRoom:47];
-                    [self insertRoom:56];
-                    [self insertRoom:78];
-                    [self insertRoom:47];
+                    [self insertCode:0000 WithDate:[NSDate date] AndRoom:@"Gruber"];
+                    [self insertRoom:@"Gruber"];
+                    [self insertRoom:@"Marjorelle"];
+                    [self insertRoom:@"Lamour"];
+                    
+                    [self insertRoom:@"Longwy"];
+                    [self insertRoom:@"Galle"];
+                    [self insertRoom:@"Corbin"];
+                    [self insertRoom:@"Baccarat"];
+                    [self insertRoom:@"Multimedia"];
+                    [self insertRoom:@"Amphitheatre"];
+                    [self insertRoom:@"Convivialite"];
                 }
                 
                 sqlite3_close(_database);
@@ -84,7 +92,10 @@ static BDAcces *_database;
                 NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
                 [dateFormat setDateFormat:@"MM/dd/yyyy h:mm a"];
                 NSDate *dateParsed = [dateFormat dateFromString:dateStr];
-                int idRoom = sqlite3_column_int(statement, 2);
+
+                char *idRoomChar = (char*)sqlite3_column_text(statement, 2);
+                NSString *idRoom = [[NSString alloc] initWithUTF8String:idRoomChar];
+                
                 Code *code = [[Code alloc]init];
                 code.Value = value;
                 code.Room = idRoom;
@@ -114,7 +125,9 @@ static BDAcces *_database;
         {
             while (sqlite3_step(statement) == SQLITE_ROW)
             {
-                int idRoom = sqlite3_column_int(statement, 0);
+                char *idRoomChar = (char*)sqlite3_column_text(statement, 0);
+                NSString *idRoom = [[NSString alloc] initWithUTF8String:idRoomChar];
+                
                 Room *room = [[Room alloc]init];
                 room.idRoom = idRoom;
                 [rooms addObject:room];
@@ -128,14 +141,14 @@ static BDAcces *_database;
     return rooms;
 }
 
-- (BOOL)insertCode:(int)value WithDate:(NSDate*)date AndRoom:(int)room{
+- (BOOL)insertCode:(int)value WithDate:(NSDate*)date AndRoom:(NSString *)room{
     BOOL success = false;
     
     sqlite3_stmt *statement = NULL;
     const char *dbpath = [_databasePath UTF8String];
     if (sqlite3_open(dbpath, &_database) == SQLITE_OK)
     {
-        NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO code (value, date, idRoom) VALUES (%d,\"%@\",%d)",value, date, room];
+        NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO code (value, date, idRoom) VALUES (%d,\"%@\",\"%@\")",value, date, room];
         NSLog(@"%@", insertSQL);
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(_database, insert_stmt, -1, &statement, NULL);
@@ -151,14 +164,14 @@ static BDAcces *_database;
     return success;
 }
 
-- (BOOL)insertRoom:(int)value{
+- (BOOL)insertRoom:(NSString *)value{
     BOOL success = false;
     
     sqlite3_stmt *statement = NULL;
     const char *dbpath = [_databasePath UTF8String];
     if (sqlite3_open(dbpath, &_database) == SQLITE_OK)
     {
-        NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO room (id) VALUES (%d)",value];
+        NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO room (id) VALUES (\"%@\")",value];
         
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(_database, insert_stmt, -1, &statement, NULL);

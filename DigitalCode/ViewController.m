@@ -50,7 +50,7 @@
         }else{
             if([codesRetrieved count]-1 == idx){
                 NSLog(@"Good value");
-                [self.db insertCode:value WithDate:_datePicker.date AndRoom:47];
+                [self.db insertCode:value WithDate:_datePicker.date AndRoom:@"Gruber"];
             }
         }
     }];
@@ -82,7 +82,7 @@ numberOfRowsInComponent:(NSInteger)component
             forComponent:(NSInteger)component
 {
     Room *r = [self.rooms objectAtIndex:row];
-    return [[NSString alloc] initWithFormat:@"%d", r.idRoom];
+    return [[NSString alloc] initWithFormat:@"%@", r.idRoom];
 }
 
 @end

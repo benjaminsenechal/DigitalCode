@@ -10,6 +10,6 @@
 
 @interface Room : NSObject
 
-@property (nonatomic,assign) int idRoom;
+@property (nonatomic,strong) NSString *idRoom;
 
 @end

@@ -17,7 +17,7 @@
 
 - (NSArray *)codes;
 - (NSArray *)rooms;
-- (BOOL)insertCode:(int)value WithDate:(NSDate *)date AndRoom:(int)room;
+- (BOOL)insertCode:(int)value WithDate:(NSDate *)date AndRoom:(NSString *)room;
 @property (nonatomic, strong) NSString *databasePath;
 
 @end

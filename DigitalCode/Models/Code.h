@@ -13,6 +13,6 @@
 
 @property (nonatomic,assign) int Value;
 @property (nonatomic, strong) NSDate *Date;
-@property (nonatomic,assign) int Room;
+@property (nonatomic,assign) NSString *Room;
 
 @end
